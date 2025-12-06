@@ -1,178 +1,108 @@
-![YouTube Insights Analyzer Banner](assets/banner.png)
+![Banner](https://raw.githubusercontent.com/aggarwalharshit21/youtube-insights/main/banner.png)
 
+# 🔥 YouTube Insights Analyzer (Python + Streamlit)
 
-
-
-# 🎥 YouTube Insights Analyzer  
-### 🔥 Full-Stack YouTube Data Intelligence Tool (Python • Streamlit • NLP)
-
-Analyze any YouTube video, channel, trending region, and user comments using a single unified system powered by:
-
-✔ YouTube Data API  
-✔ Python Data Analysis  
-✔ Streamlit Web UI  
-✔ AI-based Sentiment Analysis  
-
-This is a **portfolio-grade project** showcasing real API integration, data processing, NLP, and dashboard design.
+A powerful YouTube analytics tool that allows you to analyze **videos**, **channels**, **trending content**, and **comment sentiment** using the **YouTube Data API v3**.  
+Includes both **CLI mode** and a **full interactive Streamlit Web App**.
 
 ---
 
 # 🚀 Features
 
-### 🎬 **1. Video Performance Analyzer**
-- Fetch views, likes, comments, channel name  
-- Auto-calculate engagement score  
-- Visual charts (bar, line)  
-- Export CSV  
+### ✅ **1. Video Insights Analysis**
+- Fetches views, likes, comments  
+- Engagement score calculation  
+- Auto-generated insight charts  
+- Save output to CSV  
 
-### 📺 **2. Channel Statistics**
-- Subscribers  
-- Total views  
-- Total videos  
-- Channel creation timestamp  
+### ✅ **2. Trending Videos (Country-wise)**
+- Works for IN, US, UK…  
+- Displays real-time trending videos  
+- Interactive charts for trending performance  
 
-### 🌎 **3. Trending Videos (By Country)**
-- Fetch top 20 trending videos  
-- Engagement comparison  
-- Data visualization  
-- Country-based insights  
+### ✅ **3. Sentiment Analysis on Comments**
+- Classifies comments as Positive / Negative / Neutral  
+- Shows sentiment distribution chart  
 
-### 🤖 **4. Comment Sentiment Analysis (AI Powered)**
-- Fetch top 100 comments  
-- Natural Language Processing (TextBlob)  
-- Positive / Negative / Neutral distribution  
-- Sentiment chart + CSV export  
-
-### 🖥 **5. Streamlit Web App UI**
-- Clean sidebar menu  
-- Interactive visualizations  
-- One-click results  
-- Web-based dashboard experience  
-
----
-
-# 🏗️ Project Architecture
-
-```
-youtube-insights/
-│── main.py                # Console analyzer (CLI)
-│── app.py                 # Streamlit Web App UI
-│── config.py              # API key storage
-│── requirements.txt       # All dependencies
-│── README.md              # Documentation
-│── assets/
-│     └── banner.png       # Project Banner
-│── output/
-      ├── video_analysis.csv
-      ├── trending_analysis.csv
-      └── comments.csv
-```
-
----
-
-# 🖼️ Screenshots
-
-> (Add your screenshots here after running the app)  
-> Create an "assets" folder and upload images.
-
-### 📌 Video Insights Dashboard  
-![Video Screenshot](assets/video_dashboard.png)
-
-### 📌 Trending Analyzer  
-![Trending Screenshot](assets/trending.png)
-
-### 📌 Sentiment Analysis  
-![Sentiment Screenshot](assets/sentiment.png)
-
----
-
-# 📦 Installation
-
-### 1️⃣ Clone the project
-
-```sh
-git clone https://github.com/aggarwalharshit21/youtube-insights.git
-cd youtube-insights
-```
-
-### 2️⃣ Install dependencies
-
-```sh
-pip install -r requirements.txt
-python -m textblob.download_corpora
-```
-
-### 3️⃣ Add your API key
-
-Edit `config.py`:
-
-```python
-API_KEY = "YOUR_YOUTUBE_API_KEY"
-```
-
----
-
-# ▶️ Running the Console App
-
-```sh
-python main.py
-```
-
-Options:
-
-```
-1 → Video Analysis
-2 → Channel Stats
-3 → Trending Videos
-4 → Sentiment Analysis (AI)
-```
-
----
-
-# 🌐 Running the Streamlit Web App
-
-```sh
-streamlit run app.py
-```
-
-Streamlit will auto-open in your browser.
+### ✅ **4. Streamlit Web App**
+- Beautiful UI  
+- Input multiple video IDs  
+- View dashboards instantly  
 
 ---
 
 # 🛠️ Tech Stack
 
-| Component | Technology |
-|----------|------------|
-| Programming | Python |
+| Layer | Technology |
+|-------|------------|
+| Backend | Python |
 | API | YouTube Data API v3 |
-| NLP | TextBlob |
-| UI Framework | Streamlit |
-| Visualization | Matplotlib |
-| Data Processing | Pandas |
+| Web UI | Streamlit |
+| Data | Pandas |
+| Charts | Matplotlib |
+| NLP | Basic sentiment scoring |
+| Security | `.env` API key |
 
 ---
 
-# 🌱 Future Enhancements
+# 📦 Installation Guide
 
-- Comment summarization using GPT  
-- Predictive analytics (views prediction using ML)  
-- Dark mode UI  
-- Deploy on Streamlit Cloud / Render  
-- Add thumbnail preview & video metadata  
+## 1️⃣ Clone the Repository
 
----
+git clone https://github.com/aggarwalharshit21/youtube-insights.git
+cd youtube-insights
 
-# ⭐ Why This Project Stands Out
 
-- Real-time data from YouTube  
-- Shows both **data engineering + data analytics + AI skills**  
-- Includes a rich UI dashboard  
-- Highly scalable project architecture  
-- Perfect for resumes, LinkedIn, and interviews  
+2️⃣ Install Requirements
+pip install -r requirements.txt
 
----
 
-# 👤 Author  
-### **Harshit Aggarwal**  
-If you like this project, please ⭐ star the repository on GitHub!
+3️⃣ Add API Key (Secure)
 
+Create a .env file:
+YOUTUBE_API_KEY=YOUR_API_KEY_HERE
+
+
+4️⃣ Run CLI Tool
+python main.py
+
+
+5️⃣ Run Streamlit App
+streamlit run app.py
+
+
+📸 Project Screenshots
+
+
+🎥 Video Insights Dashboard
+(Generated from Streamlit Web App)
+
+
+📈 Trending Videos Dashboard
+(Country-wise trending analytics)
+
+
+😊 Sentiment Analysis Output
+(Emotion distribution of real YouTube comments)
+
+
+📁 Project Structure
+youtube-insights/
+│── app.py
+│── main.py
+│── config.py
+│── requirements.txt
+│── README.md
+│── video_analysis.csv
+│── trending_analysis.csv
+│── banner.png
+│── trending.png
+│── sentiment.png
+│── video_dashboard.png
+
+🤝 Contribution
+Pull requests are welcome!
+Feel free to suggest improvements.
+
+⭐ Support
+If you found this project useful, please consider starring ⭐ the repository.
