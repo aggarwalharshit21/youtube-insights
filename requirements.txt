@@ -1,0 +1,7 @@
+google-api-python-client
+pandas
+matplotlib
+python-dotenv
+textblob
+nltk
+streamlit
